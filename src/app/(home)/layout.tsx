@@ -3,20 +3,13 @@ import { Col, Row, Space } from "antd";
 import classNames from "classnames";
 import React from "react";
 import { Menu } from "antd";
-import Link from "next/link";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faBinoculars,
-  faBook,
-} from "@fortawesome/free-solid-svg-icons";
+
 import Header from "@/components/layouts/Header";
 import Sidebar from "@/components/layouts/Sidebar";
 
 export default function HomeLayout(props: {
   children: React.ReactNode;
-  queue: React.ReactNode;
   player: React.ReactNode;
 }) {
   return (
@@ -37,10 +30,7 @@ export default function HomeLayout(props: {
         </div>
       </Col>
       <Col span={5}>
-        <div className="flex flex-col">
-          {/* <div className="grow">{props.queue}</div>
-          <div className="shrink">{props.player}</div> */}
-        </div>
+        {/* <div className="flex flex-col">{props.player}</div> */}
       </Col>
     </Row>
   );
